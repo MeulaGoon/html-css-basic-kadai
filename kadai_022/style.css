@@ -16,7 +16,7 @@ font-size: 20px;
 
 header {
 margin:0 0 20px 0;
-background-color(244, 79, 79);
+background-color: rgb(244, 79, 79);
 text-align: center;
 }
 
@@ -51,7 +51,7 @@ content:"●";
 color: rgb(239, 111, 139);
 }
 
-.contents p(2)::first-letter {
+:nth-of-type(2)::first-letter {
 color: rgb(97,206,249);
 font-weight: bold;
 }
@@ -77,6 +77,14 @@ color: rgb(193, 234, 251) ;
 
 a{
 color: rgb(245, 178, 168) ;
+}
+
+a:visited{
+  color: rgb(193, 234, 251);
+}
+
+a:hover{
+  color: rgb(245, 178, 168)
 }
 
 @media screen and (max-width: 768px) {
