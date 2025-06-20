@@ -1,0 +1,131 @@
+/* PC、スマホ共通スタイル */
+body {
+  font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+}
+
+p {
+  font-size: 15px;
+}
+
+#main-visual>img {
+  width: 100%;
+}
+
+/*================
+PC用のスタイル 
+=================*/
+@media screen and (min-width: 768px) {
+  body {
+    max-width: 1080px;
+    min-width: 960px;
+    margin: 0 auto;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #nav-pc {
+    text-align: right;
+    font-size: 14px;
+  }
+
+  #nav-pc>a {
+    text-decoration: none;
+    margin-left: 20px;
+  }
+
+  #nav-pc>a:link,
+  #nav-pc>a:visited,
+  #nav-pc>a:active {
+    color: #0d0d0d;
+  }
+
+  #nav-pc>a:hover {
+    color: #0d0d0d;
+    text-decoration: underline;
+  }
+
+  #menu-sp, #nav-sp {
+    display: none;
+  }
+}
+
+/*================
+スマホ用スタイル 
+=================*/
+@media screen and (max-width: 767px) {
+body {
+  min-width: 375px;
+  margin: 0;
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+#nav-pc {
+  display: none;
+}
+
+#menu-sp {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+#nav-sp {
+  background-color: #ce933e;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  z-index: 100;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+#close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  width: 30px;
+  height: 30px;
+
+}
+
+#logo-sp {
+  margin: 80px 0 30px 20px;
+  display: block;
+}
+
+#nav-sp a.menu {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 20px;
+  height: 44px;
+  font-size: 16px;
+  background-image: url("images/arrow.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  line-height: 44px;
+}
+
+#nav-sp a:hover {
+  text-decoration: underline;
+}
+}
